@@ -6,6 +6,7 @@
                 steps {
                     script {
                         def myUtils = load 'clone.groovy' // Load the script
+                            myUtils.process()
 
                         // Call methods from the loaded script
                         //echo myUtils.greet('Jenkins')
