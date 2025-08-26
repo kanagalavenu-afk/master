@@ -2,7 +2,7 @@
     pipeline {
         agent any
         stages {
-            stage('Load and Execute Groovy Script') {
+            stage('clone') {
                 steps {
                     script {
                         def myUtils = load 'clone.groovy' // Load the script
