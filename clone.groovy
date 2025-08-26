@@ -1,7 +1,7 @@
 groovy
 // Define the repository URL and the target directory
-def repoUrl = "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git"
-def targetDir = "path/to/your/local/directory"
+def repoUrl = "https://github.com/kanagalavenu-afk/master.git"
+def targetDir = "D:\github"
 
 // Construct the git clone command
 def gitCloneCommand = "git clone ${repoUrl}"
