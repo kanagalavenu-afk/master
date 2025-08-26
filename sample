@@ -1,5 +1,5 @@
-Jenkinsfile (Declarative Pipeline)
-pipeline {
+//Jenkinsfile (Declarative Pipeline)
+//pipeline {
     agent any 
     stages {
         stage('Build') { 
