@@ -1,19 +1,12 @@
-// Jenkinsfile (Declarative Pipeline)
-    pipeline {
-        agent any
-        stages {
-            stage('clone') {
-                steps {
-                    script {
-                        def myUtils = load 'clone.groovy' // Load the script
-                            myUtils.process()
+pipeline {
+    agent any
 
-                        // Call methods from the loaded script
-                        //echo myUtils.greet('Jenkins')
-                       // def sum = myUtils.calculateSum(5, 10)
-                       // echo "The sum is: ${sum}"
-                    }
-                }
+    stages {
+        dir('E:\\github')
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', credentialsId: 'user_password', url: 'https://github.com/kanagalavenu-afk/master.git'
             }
         }
     }
+}
