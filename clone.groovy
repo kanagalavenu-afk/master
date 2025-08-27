@@ -1,4 +1,4 @@
-groovy
+//groovy
 // Define the repository URL and the target directory
 def repoUrl = "https://github.com/kanagalavenu-afk/master.git"
 def targetDir = "testdata"
